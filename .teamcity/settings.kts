@@ -35,7 +35,7 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = ".teamcity/*.jar => .teamcity"
+    artifactRules = "target/*.jar => target"
     publishArtifacts = PublishMode.ALWAYS
 
     vcs {
