@@ -36,6 +36,7 @@ object Build : BuildType({
     name = "Build"
 
     artifactRules = ".teamcity/*.jar => .teamcity"
+    publishArtifacts = PublishMode.ALWAYS
 
     vcs {
         root(DslContext.settingsRoot)
