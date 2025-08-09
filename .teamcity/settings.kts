@@ -35,6 +35,8 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    artifactRules = ".teamcity => .teamcity"
+
     vcs {
         root(DslContext.settingsRoot)
     }
